@@ -26,29 +26,75 @@
   </head>
   <body>
 
-    <div class="container has-bg-img border">
-      <div class="row text-center mt-5">
-        <h1 class="text-black">Dress Up Game Test</h1>
+    <div class="container has-bg-img border mt-5">
+      <div class="row text-center ">
+        <h1>Dress Up Game Test</h1>
       </div>
-    </div>
 
-    <div class="container" data-aos="">
-      <div class="row">
-        <div class="col border text-center">
-         <h2><img src="img/starter_piplup.jpg"
-          alt="Image of Piplup"
-          title="Starter Pokemon Plushies" width="300px"></h2>
+    <div class="row ">
+        <div class="col-1">
         </div>
-        <div class="col mt-5 text-center">
-          <h2><a href="shop.html#starters">Starters</a></h2>
+
+        <div class="col-5 text-center border">
+            <img class="halfheight" id="starters" src="img/dressuptestimg.png">
         </div>
-    </div>
-  </div>
+
+        <div class="col-1">
+        </div>
+
+        <div id="closet" class="col-4">
+          <p class="text-center">Closet</p>
+          <div id="color-swatches">
+            <div class="swatch selected" id="blue">Piplup: Basic</div>
+            <div class="swatch" id="cyan">Piplup: Sleepy</div>
+            <div class="swatch" id="orange">Piplup: Halloween</div>
+            <div class="swatch" id="purple">Piplup: Large Plush</div>
+            <div class="swatch" id="red">Chimchar: Basic</div>
+            <div class="swatch" id="green">Turtwig: Basic</div>
+            <div class="swatch" id="pink">Turtwig: Potted Plant</div>
+          </div>
+        </div>
+        
+        
+      </div>
+
+
+    <div class="row mt-4">
+        <div class="col-1">
+
+        </div>
+        <div class="col-3 text-center">
+            <button id="reset" type="button" class="btn btn-primary btn-lg btn-block">Reset</button>
+        </div>
+        
+        <div class="col-1">
+        </div>
+
+        <div class="col-1  text-center">
+            <button id="mute" type="button" class="btn btn-danger">Mute</button>
+        </div>
+        
+        <div class="col-1">
+        </div>
+
+        <div id="bg-swatches" class="col-4">
+        
+          <p class="text-center">Background Swatches</p>
+          <div id="color-swatches">
+            <div class="swatch selected" id="blue">Piplup: Basic</div>
+            <div class="swatch" id="cyan">Piplup: Sleepy</div>
+            <div class="swatch" id="orange">Piplup: Halloween</div>
+            <div class="swatch" id="purple">Piplup: Large Plush</div>
+          </div>
+        </div>
+        
+        
+      </div>
 
   
 
     
-
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

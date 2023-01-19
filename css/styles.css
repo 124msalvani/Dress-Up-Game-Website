@@ -1,0 +1,103 @@
+.container h1 {
+    min-height: 200px;
+    font-size: 55px;
+    font-family:"Raleway", sans-serif;
+}
+
+/* Color swatches */
+
+#color-swatches {
+	font-size: 0;
+	margin-bottom: 1.5rem;
+}
+
+#closet{
+    background-color: #472803;
+}
+
+.halfheight{
+    height: fit-content;
+    max-width: 120%;
+    max-height: 120%;
+}
+
+
+.swatch {
+	border: 1px solid #bbb;
+	display: inline-block;
+	width: 22%;
+	height: 40px;
+	margin: 0;
+	margin-right: calc( 4% - 3px );
+	cursor: pointer;
+}
+.swatch:last-child {
+	margin-right: 0;
+}
+.swatch#beige {
+	background-color: #d9d1c7;
+}
+.swatch#yellow {
+	background-color: #ffcd69;
+}
+.swatch#blue {
+	background-color: #202bc2;
+}
+.swatch#cyan {
+	background-color: #8ff1f2;
+}
+.swatch#red {
+	background-color: #ff8282;
+}
+.swatch#orange {
+	background-color: #d57f15;
+}
+.swatch#brown {
+	background-color: #472803;
+}
+.swatch#green {
+	background-color: #09892f;
+}
+.swatch#purple {
+	background-color: #7215d5;
+}
+.swatch#white {
+	background-color: #ffffff;
+}
+.swatch#scarlet {
+	background-color: #de3806;
+}
+.swatch#gold {
+	background-color: #898909;
+}
+.swatch#lightblue {
+	background-color: #75b4f3;
+}
+.swatch#lime {
+	background-color: #0b922a;
+}
+.swatch#black {
+	background-color: #0b0b0b;
+}
+.swatch#pink {
+	background-color: #a91c65;
+}
+.swatch#pink2 {
+	background-color: #e737de;
+}
+.swatch#pink3 {
+	background-color: #fcadee;
+}
+.swatch#orange2 {
+	background-color: #ca6e2b;
+}
+.swatch#red2 {
+	background-color: #bb0909;
+}
+.selected {
+	border-color: #000;
+}
+
+
+font-family: "Raleway", sans-serif;
+font-family: "Sedgwick Ave", cursive;
