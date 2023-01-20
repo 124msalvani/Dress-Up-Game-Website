@@ -2,7 +2,34 @@
     min-height: 200px;
     font-size: 55px;
     font-family:"Raleway", sans-serif;
+	z-index: 50;
 }
+
+.parent {
+	position: relative;
+	top: 0;
+	left: 0;
+  }
+  .image1 {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	border: 1px red solid;
+	z-index: 2;
+  }
+  .image2 {
+	position: absolute;
+	top: 120px;
+	left: 210px;
+	border: 1px green solid;
+	z-index: 3;
+  }
+
+
+.has-bg-img {
+	background: white;
+  }
+
 
 /* Color swatches */
 
@@ -19,6 +46,12 @@
     height: fit-content;
     max-width: 120%;
     max-height: 120%;
+}
+
+.fourthheight{
+    height: fit-content;
+    max-width: 75%;
+    max-height: 75%;
 }
 
 

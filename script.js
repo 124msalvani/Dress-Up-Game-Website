@@ -1,7 +1,6 @@
 var coloridvalue;
 var chair;
-var price;
-var price = document.getElementById("price");
+
 
 function removeselection() {
     document.getElementById("blue").classList.remove("selected");
@@ -16,22 +15,20 @@ function removeselection() {
     document.getElementById("scarlet").classList.remove("selected");;
     document.getElementById("gold").classList.remove("selected");;
     document.getElementById("black").classList.remove("selected");
-document.getElementById("red2").classList.remove("selected");
-document.getElementById("orange2").classList.remove("selected");
-document.getElementById("pink").classList.remove("selected");
-document.getElementById("pink2").classList.remove("selected");
-document.getElementById("pink3").classList.remove("selected");
-
-  
+    document.getElementById("red2").classList.remove("selected");
+    document.getElementById("orange2").classList.remove("selected");
+    document.getElementById("pink").classList.remove("selected");
+    document.getElementById("pink2").classList.remove("selected");
+    document.getElementById("pink3").classList.remove("selected");
 };
 
-document.getElementById("blue").addEventListener('mouseover', starterBlue);
-document.getElementById("cyan").addEventListener('mouseover', starterCyan);
-document.getElementById("orange").addEventListener('mouseover', starterOrange);
-document.getElementById("purple").addEventListener('mouseover', starterPurple);
-document.getElementById("red").addEventListener('mouseover', starterRed);
-document.getElementById("green").addEventListener('mouseover', starterGreen);
-document.getElementById("brown").addEventListener('mouseover', starterBrown);
+document.getElementById("pink").addEventListener('onclick', dressPink);
+/* document.getElementById("cyan").addEventListener('mouseover', dressCyan);
+document.getElementById("orange").addEventListener('mouseover', dressOrange);
+document.getElementById("purple").addEventListener('mouseover', dressPurple);*/
+document.getElementById("red").addEventListener('onclick', dressRed);
+/*document.getElementById("green").addEventListener('mouseover', dressGreen);
+document.getElementById("brown").addEventListener('mouseover', dressBrown);
 
 document.getElementById("white").addEventListener('mouseover', legendWhite);
 document.getElementById("beige").addEventListener('mouseover', legendBeige);
@@ -47,43 +44,51 @@ document.getElementById("pink").addEventListener('mouseover', trainerPink);
 document.getElementById("pink2").addEventListener('mouseover', trainerPink2);
 document.getElementById("pink3").addEventListener('mouseover', trainerPink3);
 /*
-document.getElementById("yellow").addEventListener('mouseover', starterYellow);
-document.getElementById("pink").addEventListener('mouseover', starterPink);
-document.getElementById("beige").addEventListener('mouseover', starterBeige);
-*/
+document.getElementById("yellow").addEventListener('mouseover', dressYellow);
+document.getElementById("pink").addEventListener('mouseover', dressPink);
+document.getElementById("beige").addEventListener('mouseover', dressBeige);
+*/ 
 
-function starterRed() {
-  coloridvalue = "chimchar";
-  chair = 'img/starter_' + coloridvalue + '.jpg';
-  document.getElementById("starters").src = chair;
+function dressRed() {
+  coloridvalue = "red";
+  chair = 'img/dress_' + coloridvalue + '.png';
+  document.getElementById("dress").src = chair;
   console.log(chair);
   console.log(coloridvalue);
   removeselection();
   document.getElementById("red").classList.add("selected");
-  document.getElementById("price").style.color = "red";
-  document.getElementById("price").innerHTML = "$29.99" + "!";
+  
 };
-
-function starterOrange() {
-    coloridvalue = "piplup-halloween";
-    chair = 'img/starter_' + coloridvalue + '.jpg';
-    document.getElementById("starters").src = chair;
+/*
+function dressOrange() {
+    coloridvalue = "orange";
+    chair = 'img/dress_' + coloridvalue + '.jpg';
+    document.getElementById("dress").src = chair;
     console.log(chair);
     console.log(coloridvalue);
     removeselection();
     document.getElementById("orange").classList.add("selected");
-    document.getElementById("price").style.color = "red";
-    document.getElementById("price").innerHTML = "$29.99" + "!";
+    
 };
 
-function starterPurple() {
-    coloridvalue = "piplup-large";
-    chair = 'img/starter_' + coloridvalue + '.jpg';
-    document.getElementById("starters").src = chair;
+function dressPurple() {
+    coloridvalue = "purple";
+    chair = 'img/dress_' + coloridvalue + '.jpg';
+    document.getElementById("dress").src = chair;
     console.log(chair);
     console.log(coloridvalue);
     removeselection();
     document.getElementById("purple").classList.add("selected");
-    document.getElementById("price").style.color = "black";
-    document.getElementById("price").innerHTML = "$49.99" + "";
+    
+}; */
+
+function dressPink() {
+    coloridvalue = "pink";
+    chair = 'img/dress_' + coloridvalue + '.png';
+    document.getElementById("dress").src = chair;
+    console.log(chair);
+    console.log(coloridvalue);
+    removeselection();
+    document.getElementById("pink").classList.add("selected");
+    
 };
