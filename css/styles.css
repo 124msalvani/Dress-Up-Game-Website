@@ -4,7 +4,7 @@
     font-family:"Raleway", sans-serif;
 	z-index: 50;
 }
-
+/* Test image over another image */
 .parent {
 	position: relative;
 	top: 0;
@@ -15,20 +15,29 @@
 	top: 0px;
 	left: 0px;
 	border: 1px red solid;
-	z-index: 2;
+	z-index: 0;
   }
   .image2 {
 	position: absolute;
 	top: 120px;
 	left: 210px;
 	border: 1px green solid;
-	z-index: 3;
+	z-index: 1;
   }
 
 
 .has-bg-img {
 	background: white;
   }
+
+.bg-blue{
+background-color: #202bc2;
+  }
+
+.bg-blue{
+	background-color: #202bc2;
+  }
+
 
 
 /* Color swatches */
