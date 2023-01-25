@@ -19,8 +19,8 @@
 }
   .image2 {
 	position: absolute;
-	top: 37%;
-	left: 45%;
+	top: 10%;
+	left: 13%;
 	border: 1px green solid;
 	z-index: 1;
 }
@@ -28,6 +28,7 @@
 
 .has-bg-img {
 	background: white;
+	height: 80%;
 }
 
 .bg-blue{
@@ -64,14 +65,14 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%
 
 .halfheight{
     height: fit-content;
-    max-width: 120%;
-    max-height: 120%;
+    max-width: 80%;
+    max-height: 80%;
 }
 
 .fourthheight{
     height: fit-content;
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 
