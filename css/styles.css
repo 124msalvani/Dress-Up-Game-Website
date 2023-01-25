@@ -9,35 +9,46 @@
 	position: relative;
 	top: 0;
 	left: 0;
-  }
+}
   .image1 {
 	position: relative;
 	top: 0px;
 	left: 0px;
 	border: 1px red solid;
 	z-index: 0;
-  }
+}
   .image2 {
 	position: absolute;
-	top: 120px;
-	left: 210px;
+	top: 37%;
+	left: 45%;
 	border: 1px green solid;
 	z-index: 1;
-  }
+}
 
 
 .has-bg-img {
 	background: white;
-  }
+}
 
 .bg-blue{
-background-color: #202bc2;
-  }
+	background: rgb(0,3,33);
+	background: linear-gradient(0deg, rgba(0,3,33,1) 8%, rgba(13,9,125,1) 54%, rgba(141,172,236,1) 96%);
+}
 
-.bg-blue{
-	background-color: #202bc2;
-  }
+.bg-cyan{
+	background: rgb(154,198,254);
+	background: linear-gradient(0deg, rgba(154,198,254,1) 16%, rgba(236,141,162,1) 47%, rgba(250,190,106,1) 82%);
+}
 
+.bg-green{
+	background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+	
+.bg-pink{
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
 
 
 /* Color swatches */

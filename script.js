@@ -9,7 +9,6 @@ function removeselection() {
     document.getElementById("purple").classList.remove("selected");
     document.getElementById("red").classList.remove("selected");
      document.getElementById("green").classList.remove("selected");
-    document.getElementById("brown").classList.remove("selected");
     /* document.getElementById("white").classList.remove("selected");;
     document.getElementById("beige").classList.remove("selected");;
     document.getElementById("scarlet").classList.remove("selected");;
@@ -18,19 +17,21 @@ function removeselection() {
     document.getElementById("red2").classList.remove("selected");
     document.getElementById("orange2").classList.remove("selected"); */
     document.getElementById("pink").classList.remove("selected"); 
-    // document.getElementById("pink2").classList.remove("selected");
-    // document.getElementById("pink3").classList.remove("selected");
+    document.getElementById("reset").classList.remove("selected");
+    document.getElementById("pink2").classList.remove("selected");
 };
 
-document.getElementById("pink").addEventListener('mouseover', dressPink);
-document.getElementById("orange").addEventListener('mouseover', dressOrange);
-document.getElementById("purple").addEventListener('mouseover', dressPurple);
-document.getElementById("red").addEventListener('mouseover', dressRed);
+document.getElementById("pink").addEventListener('click', dressPink);
+document.getElementById("orange").addEventListener('click', dressOrange);
+document.getElementById("purple").addEventListener('click', dressPurple);
+document.getElementById("red").addEventListener('click', dressRed);
 
-document.getElementById("blue").addEventListener('mouseover', bgBlue);
-document.getElementById("cyan").addEventListener('mouseover', bgCyan);
-document.getElementById("brown").addEventListener('mouseover', bgBrown);
-document.getElementById("green").addEventListener('mouseover', bgGreen);
+document.getElementById("blue").addEventListener('click', bgBlue);
+document.getElementById("cyan").addEventListener('click', bgCyan);
+document.getElementById("pink2").addEventListener('click', bgPink2);
+document.getElementById("green").addEventListener('click', bgGreen);
+
+document.getElementById("reset").addEventListener('click', removeDress);
 
 
 
@@ -94,12 +95,13 @@ function dressPink() {
     document.getElementById("pink").classList.add("selected");
     
 };
-
+///Background Changers
 var bgidvalue;
 
 function bgBlue() {
+    removebackground()
     bgidvalue = "blue";
-    document.getElementById("has-bg-img").classList.add("bg-blue");
+    document.getElementById("bg").classList.add("bg-blue");
     console.log(bgidvalue);
     removeselection();
     document.getElementById("blue").classList.add("selected");
@@ -107,28 +109,50 @@ function bgBlue() {
 };
 
 function bgCyan() {
+    removebackground()
     bgidvalue = "cyan";
-    document.getElementById("has-bg-img").classList.add("bg-blue");
+    document.getElementById("bg").classList.add("bg-cyan");
     console.log(bgidvalue);
     removeselection();
     document.getElementById("cyan").classList.add("selected");
     
 };
 
-function bgBrown() {
-    bgidvalue = "brown";
-    document.getElementById("has-bg-img").classList.add("bg-blue");
+function bgPink2() {
+    removebackground()
+    bgidvalue = "pink2";
+    document.getElementById("bg").classList.add("bg-pink");
     console.log(bgidvalue);
     removeselection();
-    document.getElementById("brown").classList.add("selected");
+    document.getElementById("pink2").classList.add("selected");
     
 };
 
 function bgGreen() {
+    removebackground()
     bgidvalue = "green";
-    document.getElementById("has-bg-img").classList.add("bg-blue");
+    document.getElementById("bg").classList.add("bg-green");
     console.log(bgidvalue);
     removeselection();
     document.getElementById("green").classList.add("selected");
     
 };
+
+function removeDress() {
+    chair = 'img/dress_blank.png';
+    document.getElementById("dress").src = chair;
+    console.log(chair);
+    console.log(coloridvalue);
+    removeselection();
+    removebackground()
+    document.getElementById("reset").classList.add("selected");
+    
+};
+
+
+function removebackground(){
+    document.getElementById("bg").classList.remove("bg-blue");
+    document.getElementById("bg").classList.remove("bg-cyan");
+    document.getElementById("bg").classList.remove("bg-pink");
+    document.getElementById("bg").classList.remove("bg-green");
+}
