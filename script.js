@@ -64,7 +64,7 @@ function dressRed() {
 };
 
 function dressOrange() {
-    coloridvalue = "orange";
+    coloridvalue = "orange2";
     chair = 'img/dress_' + coloridvalue + '.png';
     document.getElementById("dress").src = chair;
     console.log(chair);
